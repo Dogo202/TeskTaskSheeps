@@ -37,6 +37,8 @@ if(($paddock=$paddocks->fetch_assoc())!=''){
                 }
                     ?>
         </textarea>
+        <button onclick="add_sheep(1)">Добавить 1 овцу в загон 1</button>
+        <button onclick="kill_sheep(1)">убить 1 овцу из загона 1</button>
         <?
         while($paddock=$paddocks->fetch_assoc()){
             $number=$paddock['id'];
@@ -68,6 +70,8 @@ if(($paddock=$paddocks->fetch_assoc())!=''){
             }
             ?>
         </textarea>
+                <button onclick="add_sheep(2)">Добавить 1 овцу в загон 1</button>
+                <button onclick="kill_sheep(2)">убить 1 овцу из загона 1</button>
         </div>
                 <?
             }elseif ($number==3){
@@ -99,6 +103,8 @@ if(($paddock=$paddocks->fetch_assoc())!=''){
             }
             ?>
         </textarea>
+                <button onclick="add_sheep(3)">Добавить 1 овцу в загон 1</button>
+                <button onclick="kill_sheep(3)">убить 1 овцу из загона 1</button>
         <?
             }elseif ($number==4){
                ?>
@@ -128,6 +134,8 @@ if(($paddock=$paddocks->fetch_assoc())!=''){
             }
             ?>
         </textarea>
+                <button onclick="add_sheep(4)">Добавить 1 овцу в загон 1</button>
+                <button onclick="kill_sheep(4)">убить 1 овцу из загона 1</button>
         </div>
         <?
             }
